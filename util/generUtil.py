@@ -29,7 +29,7 @@ def genOne(b_key):
     pre = bn + rnd
     chk = luhn(pre)
     fn = pre + str(chk)
-    y = random.randint(datetime.now().year, datetime.now().year + 5)
+    y = random.randint(datetime.now().year + 1, datetime.now().year + 5)
     m = random.randint(1, 12)
     exp = f"{m:02d}/{str(y)[-2:]}"
     clen = 4 if bn.startswith(('34', '37')) else 3

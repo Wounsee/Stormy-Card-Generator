@@ -1,12 +1,9 @@
+from PyQt6.QtWidgets import *
+from PyQt6.QtCore import *
 import sys
-from PyQt6.QtWidgets import (QApplication, QMainWindow, QWidget, QVBoxLayout, QLabel, 
-                             QComboBox, QHBoxLayout, QSpinBox, QPushButton, QFrame, 
-                             QScrollArea, QFileDialog, QGraphicsOpacityEffect, QGraphicsDropShadowEffect)
-from PyQt6.QtCore import Qt, QTimer, QPropertyAnimation, QEasingCurve, QPoint, pyqtSignal
-from PyQt6.QtGui import QColor, QCursor
-
 from styles.styles import style
 from util.generUtil import genOne, BINS
+from PyQt6.QtGui import *
 from util.savaUtil import expData
 
 class Clk(QLabel):
